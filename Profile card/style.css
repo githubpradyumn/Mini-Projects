@@ -44,7 +44,7 @@ body {
     border-radius: 24px 24px 0 0; /* Rounds the top corners */
 }
 
-Circular container for the profile image
+/* Circular container for the profile image */
 .image {
     position: relative; /* Positions the image relative to its container */
     height: 150px; /* Fixed height */
