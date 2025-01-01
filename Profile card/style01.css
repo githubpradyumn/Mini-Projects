@@ -60,17 +60,16 @@
     left: 2px;
     width: 262px;
     height: 337px;
-    border: 6px solid;
+    border: 8px solid;
     border-radius: 15px;
     overflow: hidden;
-    /* box-shadow: 7px 7px 6px black; */
+    box-shadow: 6px 6px 9px black;
 }
 
 .profile-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* font-family: "Averia Serif Libre", "Actor", sans-serif;  */
 }
 
 .profile-info{
@@ -88,7 +87,7 @@
     letter-spacing: -2px;
     margin-bottom: 10px;
     color: #040404;
-    /* text-shadow: 8px 7px 4px rgb(177, 173, 173); */
+    text-shadow: 8px 7px 4px rgb(145, 141, 141);
 }
 
 .profile-info h2 {
@@ -97,38 +96,27 @@
     left: 5px;
     font-size: 26px;
     color: #000000;
-    /* text-shadow: 4px 3px 3px rgb(188, 184, 184); */
-    /* margin-bottom: 20px; */
+    text-shadow: 4px 3px 4px rgb(82, 78, 78);
 }
 
 .social-links {
-    /* border: 1px solid; */
-    border: 6px solid black;
+    background-color: #c4bebe;
+    border: 8px solid black;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 15px;
     gap: 15px;
     grid-row: 4/6;
     grid-column: 1/4;
     position: relative;
-    top: 95px;
+    top: 91px;
     left: 8px;
-    width: 250px;
+    width: 271px;
     height: 68px;
-    /* box-shadow: 7px 7px 6px black; */
- 
+    box-shadow: 6px 6px 9px rgb(60, 59, 59);
 }
 
-.social-icon {
-    width: 45px;
-    height: 45px;
-    background-color: #000000;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .social-links .link {
     display: flex; 
     justify-content: center; 
@@ -139,81 +127,99 @@
     width: 48px; 
     text-decoration: none; 
     border-radius: 10px;
-    /* margin: 0px 10px;  */
     background-color: #000000; 
-}
-/* .social-icon .link {
-    width: 20px;
-    height: 20px;
     filter: invert(1);
-} */
+}
 
 .section-1 {
     position: relative;
     top: 61px;
     left: 19px;
-    background-color: #908989;
+    background-color: #c4bebe;;
     padding: 20px;
     border-radius: 10px;
-    /* margin: 20px 0; */
     grid-row: 3 / 8;
     grid-column: 4 / 7;
-    border: 5px solid;
+    border: 8px solid;
     width: 276px;
     height: 339px;
-    /* box-shadow: 7px 7px 6px black; */
+    box-shadow: 6px 6px 9px black;
 }
 
+.section-1 h3{
+    position: relative;
+    top: -10%;
+    left: 0%;
+    font-size: 35px;
+}
+.section-1 p {
+    position: relative;
+    top: -16%;
+    font-size: 1em;
+    left: 0%;
+}
 .section-1 a{
     position: relative;
     left: 18px;
+    top: -45px;
 }
 .section-1 a button {
     width: 239px;
     height: 42px;
-    border: 4px solid ;
-    border-radius: 5px;
+    border: 5px solid ;
+    border-radius: 7px;
 }
 
 .section-2 {
-    border: 5px solid;
-    background-color: #908989;
-    /* padding: px; */
+    padding: 20px;
+    border: 7px solid;
+    background-color: #c4bebe;
     border-radius: 10px;
-    /* margin: 20px 0; */
     grid-row: 5 / 9;
     grid-column: 1 / 4;
     position: relative;
-    top: 103px;
-    left: 1px;
-    width: 271px;
-    height: 291px;
-    /* box-shadow: 7px 7px 6px black; */
+    top: 95px;
+    left: 6px;
+    width: 230px;
+    height: 254px;
+    box-shadow: 6px 6px 9px black;
 }
 .section-2 h3{
     position: relative;
-    top: 6px;
-    left: 25px;
+    top: -17%;
+    left: 0%;
+    font-size: 35px;
+}
+.section-2 p{
+    position: relative;
+    top: -30%;
+    font-size: 1.2em;
+    left: 0%;   
 }
 .section-2 .github {
+    width: 0;
+    height: 0;
     position: relative;
-    top: -38px;
-    left: 172px;
+    font-size: 3.5em;
+    color: rgb(255, 255, 255);
+    background-color: #040404;
+    top: -110px;
+    left: 183px;
 }
 
 .section-3 {
     position: relative;
-    top: 90px;
+    top: 81px;
     left: 19px;
-    border: 5px solid;
-    background-color: #908989;
+    border: 8px solid;
+    background-color: #c4bebe;;
     padding: 20px;
     border-radius: 10px;
-    /* margin: 20px 0; */
     grid-row: 7 / 9;
     grid-column: 4 / 7;
     width: 274px;
     height: 64px;
+    box-shadow: 6px 6px 9px black;
 }
 
 .section-3 h4 {
@@ -226,7 +232,6 @@
     top: -39px;
     left: -12px;
 }
-
 
 .section-3 .button {
     padding: 10px 20px;
