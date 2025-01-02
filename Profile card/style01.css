@@ -4,29 +4,32 @@
     font-family: "Averia Serif Libre", "Actor", sans-serif; 
     /* font-family: "Actor",sans-serif; */
 }
+body{
+    background-color: rgb(255, 255, 255);
+
+}
 .center-box
 {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(203, 198, 198);
 }
 .container {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(220, 220, 220);
     /* width: 100%; */
     /* max-width: 800px; */
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: grid;
     grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px ;
     grid-template-columns: 100px 100px 100px 100px 100px 100px ;
-    border: 2px solid red;
     max-width: 650px;
     width: 100%;
     max-height: 800px;
     height: 100%;
+    border: 7px solid rgb(23, 23, 23); 
+    box-shadow: 7px 7px 3px rgb(0, 0, 0);
 }
 
 .window-controls {
@@ -48,7 +51,6 @@
 .green { background-color: #27c93f; }
 
 .profile {
-    /* margin-bottom: 30px; */
     grid-row: 1/5;
     grid-column: 1/4;
     
@@ -60,10 +62,10 @@
     left: 2px;
     width: 262px;
     height: 337px;
-    border: 8px solid;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 6px 6px 9px black;
+    border: 5.5px solid rgb(23, 23, 23); 
+    box-shadow: 7px 7px 3px rgb(0, 0, 0);
 }
 
 .profile-image img {
@@ -83,7 +85,7 @@
 
 
 .profile-info h1 {
-    font-size : 66px;
+    font-size : 64px;
     letter-spacing: -2px;
     margin-bottom: 10px;
     color: #040404;
@@ -92,16 +94,15 @@
 
 .profile-info h2 {
     position: relative;
-    top: -13px;
+    top: -15px;
     left: 5px;
-    font-size: 26px;
+    font-size: 24px;
     color: #000000;
-    text-shadow: 4px 3px 4px rgb(82, 78, 78);
+    /* text-shadow: 4px 3px 4px rgb(82, 78, 78); */
 }
 
 .social-links {
     background-color: #c4bebe;
-    border: 8px solid black;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +115,8 @@
     left: 8px;
     width: 271px;
     height: 68px;
-    box-shadow: 6px 6px 9px rgb(60, 59, 59);
+    border: 5.5px solid rgb(23, 23, 23); 
+    box-shadow: 7px 7px 3px rgb(0, 0, 0);
 }
 
 .social-links .link {
@@ -137,13 +139,13 @@
     left: 19px;
     background-color: #c4bebe;;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     grid-row: 3 / 8;
     grid-column: 4 / 7;
-    border: 8px solid;
+    border: 5.5px solid rgb(23, 23, 23);
     width: 276px;
     height: 339px;
-    box-shadow: 6px 6px 9px black;
+    box-shadow: 8px 8px 3px rgb(0, 0, 0);
 }
 
 .section-1 h3{
@@ -172,9 +174,8 @@
 
 .section-2 {
     padding: 20px;
-    border: 7px solid;
     background-color: #c4bebe;
-    border-radius: 10px;
+    border-radius: 15px;
     grid-row: 5 / 9;
     grid-column: 1 / 4;
     position: relative;
@@ -182,7 +183,8 @@
     left: 6px;
     width: 230px;
     height: 254px;
-    box-shadow: 6px 6px 9px black;
+    border: 5.5px solid rgb(23, 23, 23); 
+    box-shadow: 8px 8px 3px rgb(0, 0, 0);
 }
 .section-2 h3{
     position: relative;
@@ -211,15 +213,15 @@
     position: relative;
     top: 81px;
     left: 19px;
-    border: 8px solid;
     background-color: #c4bebe;;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     grid-row: 7 / 9;
     grid-column: 4 / 7;
     width: 274px;
     height: 64px;
-    box-shadow: 6px 6px 9px black;
+    border: 5.5px solid rgb(23, 23, 23); 
+    box-shadow: 8px 8px 3px rgb(0, 0, 0);
 }
 
 .section-3 h4 {
