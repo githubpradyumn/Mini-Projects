@@ -1,0 +1,61 @@
+/* Importing Google Fonts for the "Poppins" font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Universal selector resets default browser styles and applies consistent box-sizing */
+* {
+    margin: 0; /* Removes default margin from all elements */
+    padding: 0; /* Removes default padding from all elements */
+    box-sizing: border-box; /* Includes padding and border in element's total width/height */
+    font-family: "Poppins", sans-serif; /* Sets the font to "Poppins" */
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #c8e8e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 80%;
+    background-color: #fff;
+    padding: 20px 60px 40px 40px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .content .left-side{
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+.content .left-side::before{
+    content: '';
+}
+.container .content .left-side .details  {
+    margin: 14px;
+    text-align: center;
+     
+     
+}
+.container .content .right-side{
+    width: 75%;
+    margin-left: 75px;
+
+}  
+.container .content .left-side .details i{
+    font-size: 30px;
+    color: #3e2093;
+    margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+}
