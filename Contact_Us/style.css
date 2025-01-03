@@ -25,6 +25,7 @@ body{
     border-radius: 6px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
+
 .container .content{
     display: flex;
     align-items: center;
@@ -36,6 +37,7 @@ body{
     height: 100%;
     position: relative;
 }
+
 .content .left-side::before{
     content: '';
     position: absolute;
@@ -46,23 +48,71 @@ body{
     transform: translateY(-50%);
     background: #afafb6;
 }
+
 .container .content .left-side .details  {
     margin: 14px;
     text-align: center;
      
      
 }
-.container .content .right-side{
-    width: 75%;
-    margin-left: 75px;
 
-}  
 .container .content .left-side .details i{
     font-size: 30px;
     color: #3e2093;
     margin-bottom: 10px;
 }
+
 .content .left-side .details .topic{
     font-size: 18px;
     font-weight: 500;
+}
+
+.content .left-side .details .text-1,
+.content .left-side .details .text-2{
+    font-size: 14px;
+    color: #afafb6;
+}
+
+.container .content .right-side{
+    width: 75%;
+    margin-left: 75px;
+}  
+
+.content .right-side .topic-text{
+    font-style: 23px;
+    font-weight: 600;
+    color:#3e2093;
+}
+
+.right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border-radius:  6px;
+    border: none;
+    font-size: 16px;
+    background: #f0f1f8;
+    padding: 0 15px ;
+}
+.right-side .message-box{
+    min-height: 110px;
+}
+.right-side .button button{
+    color: #ffffff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    background: #3e2093;
+}
+
+.button button:hover{
+    
 }
