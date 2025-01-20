@@ -142,22 +142,24 @@ body{
     box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.792);
 }
 
-.section-1 h3{
+.section-1 h3 {
     position: relative;
-    top: -10%;
+    top: -4%;
     left: 0%;
     font-size: 35px;
+    margin: 0px;
 }
 .section-1 p {
     position: relative;
-    top: -16%;
-    font-size: 1em;
+    top: -2%;
+    font-size: 18px;
     left: 0%;
+    margin: 0;
 }
 .section-1 a{
     position: relative;
     left: 18px;
-    top: -45px;
+    top: 2px;
 }
 .section-1 a button {
     width: 239px;
@@ -187,21 +189,21 @@ body{
     left: 0%;
     font-size: 35px;
 }
-.section-2 p{
+.section-2 p {
     position: relative;
-    top: -30%;
-    font-size: 1.2em;
-    left: 0%;   
+    top: -36%;
+    font-size: 20px;
+    left: 3%;
 }
 .section-2 .github {
     width: 0;
     height: 0;
     position: relative;
-    font-size: 3.5em;
+    font-size: 2.5em;
     color: rgb(255, 255, 255);
     background-color: #040404;
-    top: -110px;
-    left: 183px;
+    top: -120px;
+    left: 195px;
 }
 
 .section-3 {
@@ -221,13 +223,12 @@ body{
 
 .section-3 h4 {
     font-size: 1.2em;
-    margin-bottom: 15px;
     display: flex;
     align-items: center;
-    gap: 10px;
     position: relative;
-    top: -39px;
+    top: -15px;
     left: -12px;
+    margin: 0;
 }
 
 .section-3 .button {
@@ -239,7 +240,7 @@ body{
     text-decoration: none;
     font-weight: bold;
     position: relative;
-    top: -34px;
+    top: 6px;
     left: 147px;
     border: 5px solid;
 }
