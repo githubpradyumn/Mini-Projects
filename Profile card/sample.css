@@ -6,7 +6,7 @@
     font-family: "Averia Serif Libre", "Actor", sans-serif; 
 }
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(185, 182, 182);
 
 }
 .center-box
@@ -27,10 +27,10 @@ body{
     display: grid;
     grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px ;
     grid-template-columns: 55px 55px 55px 55px 55px 55px;
-    border: 7px solid rgb(23, 23, 23); 
-    /* border-radius: 5px; */
+    border: 5px solid rgb(23, 23, 23); 
+    border-radius: 8px;
     background-color: white;
-    /* box-shadow: 5px 5px 3px rgb(97 92 92); */
+    box-shadow: 3px 3px 9px rgb(68, 67, 67);
 }
 
 /* .window-controls {
@@ -63,11 +63,11 @@ body{
     max-height: 156px;
     position: relative;
     top: 10px;
-    left: 11px;
-    /* border-radius: 5px;  */
+    left: 7px;
     overflow: hidden;
-    /* border: 3px solid rgb(23, 23, 23); */
-    /* box-shadow: 5px 5px 3px rgb(97 92 92); */
+    border-radius: 5px; 
+    border: 3px solid rgb(23, 23, 23);
+    box-shadow: 3px 3px 3px rgb(97 92 92);
 }
 
 .profile-image img {
@@ -91,12 +91,12 @@ body{
     margin-bottom: 10px;
     color: #040404;
     line-height: 33px;
-    /* text-shadow: 3px 2px 4px rgb(91, 89, 89); */
+    text-shadow: 3px 2px 4px rgb(91, 89, 89);
 }
 .profile-info h2 {
     position: relative;
-    top: -5px;
-    left: 0px;
+    top: -10px;
+    left: 2px;
     font-size: 17px;
     color: #000000;
     line-height: 18px;
@@ -116,8 +116,8 @@ body{
     left: 11px;
     width: 132px;
     height: 32px;
-    /* border: 3px solid rgb(23, 23, 23); */
-    /* box-shadow: 3px 3px 2px rgb(97 92 92); */
+    border: 3px solid rgb(23, 23, 23);
+    box-shadow: 3px 3px 2px rgb(97 92 92);
     /* box-shadow: 7px 7px 3px rgb(0, 0, 0); */
 }
 
@@ -137,55 +137,58 @@ body{
 
 .section-1 {
     position: relative;
-    top: 43px;
-    left: -1px;
+    top: 34px;
+    left: -4px;
     background-color: #c4bebe;
     padding: 10px;
     grid-row: 3 / 8;
     grid-column: 4 / 7;
-    /* border: 5.5px solid rgb(23, 23, 23); */
     width: 140px;
     height: 163px;
-    /* box-shadow: 8px 8px 3px rgb(0, 0, 0); */
+    border-radius: 5px; 
+    border: 3px solid rgb(23, 23, 23);
+    box-shadow: 5px 5px 3px rgb(97 92 92);
 }
 
 .section-1 h3{
     position: relative;
-    top: -10%;
-    left: 0%;
-    font-size: 6px;
+    top: -5%;
+    left: -2%;
+    font-size: 15px;
+    margin: 2px;
 }
 .section-1 p {
-    position: relative;
-    top: -16%;
-    font-size: 1em;
-    left: 0%;
+    position: absolute;
+    top: 10%;
+    font-size: 11px;
+    left: 5%;
 }
-.section-1 a{
-    position: relative;
-    left: -8px;
-    top: -45px;
+.section-1 a {
+    position: absolute;
+    left: 11px;
+    top: 154px;
 }
 .section-1 a button {
-    width: 145px;
-    height: 33px;
-    /* border: 5px solid ; */
-    border-radius: 7px;
+    width: 140px;
+    height: 25px;
+    border: 2px solid ;
+    border-radius: 4px;
+    font-size: 12px;
 }
 
 .section-2 {
     padding: 20px;
     background-color: #c4bebe;
-    /* border-radius: 15px; */
     grid-row: 5 / 9;
     grid-column: 1 / 4;
     position: relative;
     top: 30px;
-    left: 10px;
+    left: 7px;
     width: 96px;
     height: 125px;
-    /* border: 5.5px solid rgb(23, 23, 23); */
-    /* box-shadow: 8px 8px 3px rgb(0, 0, 0); */
+    border-radius: 5px; 
+    border: 3px solid rgb(23, 23, 23);
+    box-shadow: 5px 5px 3px rgb(97 92 92);
 }
 
 .section-2 h3{
@@ -217,13 +220,13 @@ body{
     left: -1px;
     background-color: #c4bebe;
     padding: 20px;
-    /* border-radius: 15px; */
     grid-row: 7 / 9;
     grid-column: 4 / 7;
     width: 120px;
     height: 17px;
-    /* border: 5.5px solid rgb(23, 23, 23); */
-    /* box-shadow: 8px 8px 3px rgb(0, 0, 0); */
+    border-radius: 5px; 
+    border: 3px solid rgb(23, 23, 23);
+    box-shadow: 5px 5px 3px rgb(97 92 92);
 }
 
 .section-3 h4 {
@@ -241,12 +244,12 @@ body{
     padding: 2px 4px;
     background-color: white;
     border: none;
-    /* border-radius: 8px; */
     color: #333;
     text-decoration: none;
     font-weight: bold;
     position: relative;
     top: -18px;
     left: 35px;
-    /* border: 5px solid; */
+    border: 5px solid;
+    border-radius: 8px;
 }
