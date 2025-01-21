@@ -30,8 +30,8 @@ body{
 
 .window-controls {
     position: relative;
-    top: -400px;
-    left: 646px;
+    top: -410px;
+    left: 699px;
     display: inline-flex;
     gap: 5px;
 }
@@ -241,7 +241,7 @@ body{
     font-weight: bold;
     position: relative;
     top: 6px;
-    left: 147px;
+    left: 135px;
     border: 5px solid;
 }
 
