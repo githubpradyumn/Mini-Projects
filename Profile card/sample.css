@@ -35,15 +35,14 @@ body{
 .window-controls {
     position: relative;
     top: -198px;
-    left: 351px;
-    display: inline-flex
-;
+    left: 345px;
+    display: inline-flex;
     gap: 5px;
 }
 
 .control {
-    width: 11px;
-    height: 11px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
 }
 
@@ -68,6 +67,7 @@ body{
     border-radius: 3px; 
     border: 1.5px solid rgb(23, 23, 23);
     box-shadow: 0px 0px 4px rgb(0, 0, 50);
+    transition: transform 0.3s ease-in-out;
 }
 
 .profile-image:hover{
@@ -98,7 +98,11 @@ body{
     margin-bottom: 10px;
     color: #040404;
     line-height: 33px;
-    text-shadow: 3px 2px 4px rgb(91, 89, 89);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.092);
+}
+.profile-info h1:hover{
+    transform: scale(1.02);
+    text-shadow: 0px 0px 1px rgb(0, 0, 50);
 }
 .profile-info h2 {
     position: relative;
@@ -107,6 +111,11 @@ body{
     font-size: 17px;
     color: #000000;
     line-height: 18px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.092);
+}
+.profile-info h2:hover{
+    transform: scale(1.02);
+    text-shadow: 0px 0px 1px rgb(0, 0, 50);
 }
 
 .social-links {
@@ -114,7 +123,6 @@ body{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
     gap: 15px;
     grid-row: 4 / 6;
     grid-column: 1 / 4;
@@ -122,11 +130,19 @@ body{
     top: 34px;
     left: 11px;
     width: 132px;
+    transition: transform 0.3s ease-in-out;
     height: 32px;
-    border: 3px solid rgb(23, 23, 23);
-    box-shadow: 3px 3px 2px rgb(97 92 92);
+    border-radius: 5px;
+    border: 1.5px solid rgb(23, 23, 23);
+    box-shadow: 0px 0px 6px rgb(0 0 50);
 }
 
+.social-links:hover{
+    transform: scale(1.02);
+    border-radius: 5px; 
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.792);
+    border: 2.5px solid rgb(23, 23, 23); 
+}
 
 .social-links .link {
     display: flex;
@@ -139,8 +155,15 @@ body{
     text-decoration: none;
     border-radius: 3px;
     background-color: #000000;
+    transition: transform 0.3s ease-in-out;
     /* filter: invert(1); */
 } 
+.social-links .link:hover{
+    transform: scale(1.02);
+    border-radius: 5px; 
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.792);
+    border: 1.5px solid rgb(23, 23, 23); 
+}
 
 .section-1 {
     position: relative;
@@ -155,6 +178,7 @@ body{
     border-radius: 3px; 
     border: 1.5px solid rgb(23, 23, 23);
     box-shadow: 0px 0px 3px rgb(0, 0, 50);
+    transition: transform 0.3s ease-in-out;
 }
 .section-1:hover{
     transform: scale(1.02);
@@ -184,9 +208,15 @@ body{
 .section-1 a button {
     width: 140px;
     height: 25px;
-    border: 2px solid ;
+    border: 1px solid ;
     border-radius: 4px;
-    font-size: x-small;
+    font-size: 12px;
+}
+.section-1 a button:hover{
+    transform: scale(1.02);
+    border-radius: 3px; 
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.792);
+    border: 2px solid rgb(23, 23, 23); 
 }
 
 .section-2 {
@@ -202,6 +232,7 @@ body{
     border-radius: 3px; 
     border: 1.5px solid rgb(23, 23, 23);
     box-shadow: 0px 0px 3px rgb(0, 0, 50);
+    transition: transform 0.3s ease-in-out;
 }
 .section-2:hover{
     transform: scale(1.02);
@@ -234,6 +265,13 @@ body{
     left: 99px;
 }
 
+.section-2 .github:hover{
+    transform: scale(1.08);
+    /* border-radius: 5px;  */
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.792);
+    /* border: 2.5px solid rgb(23, 23, 23);  */
+}
+
 .section-3 {
     position: relative;
     top: 36px;
@@ -247,6 +285,7 @@ body{
     border-radius: 3px; 
     border: 1.5px solid rgb(23, 23, 23);
     box-shadow: 0px 0px 3px rgb(0, 0, 50);
+    transition: transform 0.3s ease-in-out;
 }
 .section-3:hover{
     transform: scale(1.02);
@@ -257,7 +296,7 @@ body{
 .section-3 h4 {
     position: relative;
     top: -124%;
-    left: -16%;
+    left: -14%;
     font-size: 12px;
     margin: 2px;
 }
@@ -268,9 +307,33 @@ body{
     color: #000000;
     position: relative;
     top: -15px;
-    left: 50px;
-    border: 2px solid;
+    left: 60px;
+    border: 1px solid;
     border-radius: 4px;
     text-decoration: none;
     font-size: 12px;
+}
+
+.section-3 .button:hover{
+    transform: scale(1.02);
+    border-radius: 3px; 
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.792);
+    border: 2px solid rgb(23, 23, 23); 
+}
+
+.zoom {
+    /* color: rgb(255, 255, 255); */
+    /* background-color: #000000; */
+    position: relative;
+    top: -156px;
+    left: 880px;
+    font-size: 30px;
+    height: 36px;
+    width: 36px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: transform 0.3s ease-in-out;
+}
+.zoom:hover{
+    transform: scale(1.2);
 }
