@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap');
 *{
-    /* padding: 20px; */
-    /* margin: 20px; */
     font-family: "Averia Serif Libre", "Actor", sans-serif; 
 }
 body{
     background-color: rgb(185, 182, 182);
-
 }
 .center-box
 {   
@@ -21,35 +18,38 @@ body{
     padding: 10px;
     width: 100%;
     max-width: 330px;
-    /* height: 100%; */
-    /* max-height: 800px; */
-    /* min-height: 800px; */
     display: grid;
     grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px ;
     grid-template-columns: 55px 55px 55px 55px 55px 55px;
-    border: 5px solid rgb(23, 23, 23); 
+    border: 2px solid rgb(23, 23, 23); 
     border-radius: 8px;
     background-color: white;
     box-shadow: 3px 3px 9px rgb(68, 67, 67);
 }
 
-/* .window-controls {
+.container:hover{
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.792);
+    /* border: 4px solid rgb(23, 23, 23);  */
+}
+
+.window-controls {
     position: relative;
-    top: -400px;
-    left: 646px;
-    display: inline-flex;
+    top: -198px;
+    left: 351px;
+    display: inline-flex
+;
     gap: 5px;
 }
 
 .control {
-    width: 12px;
-    height: 12px;
+    width: 11px;
+    height: 11px;
     border-radius: 50%;
 }
 
 .red { background-color: #ff5f56; }
 .yellow { background-color: #ffbd2e; }
-.green { background-color: #27c93f; } */
+.green { background-color: #27c93f; }
 
 .profile {
     grid-row: 1/5;
@@ -65,9 +65,16 @@ body{
     top: 10px;
     left: 7px;
     overflow: hidden;
+    border-radius: 3px; 
+    border: 1.5px solid rgb(23, 23, 23);
+    box-shadow: 0px 0px 4px rgb(0, 0, 50);
+}
+
+.profile-image:hover{
+    transform: scale(1.02);
     border-radius: 5px; 
-    border: 3px solid rgb(23, 23, 23);
-    box-shadow: 3px 3px 3px rgb(97 92 92);
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.792);
+    border: 2.5px solid rgb(23, 23, 23); 
 }
 
 .profile-image img {
@@ -118,8 +125,8 @@ body{
     height: 32px;
     border: 3px solid rgb(23, 23, 23);
     box-shadow: 3px 3px 2px rgb(97 92 92);
-    /* box-shadow: 7px 7px 3px rgb(0, 0, 0); */
 }
+
 
 .social-links .link {
     display: flex;
@@ -145,9 +152,15 @@ body{
     grid-column: 4 / 7;
     width: 140px;
     height: 163px;
+    border-radius: 3px; 
+    border: 1.5px solid rgb(23, 23, 23);
+    box-shadow: 0px 0px 3px rgb(0, 0, 50);
+}
+.section-1:hover{
+    transform: scale(1.02);
     border-radius: 5px; 
-    border: 3px solid rgb(23, 23, 23);
-    box-shadow: 5px 5px 3px rgb(97 92 92);
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.792);
+    border: 2.5px solid rgb(23, 23, 23); 
 }
 
 .section-1 h3{
@@ -186,10 +199,16 @@ body{
     width: 135px;
     height: 156px;
     border-radius: 5px;
-    border: 3px solid rgb(23, 23, 23);
-    box-shadow: 5px 5px 3px rgb(97 92 92);
+    border-radius: 3px; 
+    border: 1.5px solid rgb(23, 23, 23);
+    box-shadow: 0px 0px 3px rgb(0, 0, 50);
 }
-
+.section-2:hover{
+    transform: scale(1.02);
+    border-radius: 5px; 
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.792);
+    border: 2.5px solid rgb(23, 23, 23); 
+}
 .section-2 h3{
     position: relative;
     top: 1%;
@@ -225,11 +244,16 @@ body{
     grid-column: 4 / 7;
     width: 120px;
     height: 17px;
-    border-radius: 5px; 
-    border: 3px solid rgb(23, 23, 23);
-    box-shadow: 5px 5px 3px rgb(97 92 92);
+    border-radius: 3px; 
+    border: 1.5px solid rgb(23, 23, 23);
+    box-shadow: 0px 0px 3px rgb(0, 0, 50);
 }
-
+.section-3:hover{
+    transform: scale(1.02);
+    border-radius: 5px; 
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.792);
+    border: 2.5px solid rgb(23, 23, 23); 
+}
 .section-3 h4 {
     position: relative;
     top: -124%;
