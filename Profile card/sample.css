@@ -322,10 +322,10 @@ body{
 }
 
 .zoom {
-    /* color: rgb(255, 255, 255); */
+    color: #f5f7fa;
     /* background-color: #000000; */
     position: relative;
-    top: -156px;
+    top: -540px;
     left: 880px;
     font-size: 30px;
     height: 36px;
