@@ -121,7 +121,7 @@ body{
 .social-links {
     background-color: #c4bebe;
     display: inline-flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 15px;
     grid-row: 4 / 6;
@@ -149,7 +149,7 @@ body{
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 16px;
     height: 20px;
     width: 20px;
     text-decoration: none;
@@ -258,15 +258,23 @@ body{
     width: 0;
     height: 0;
     position: relative;
-    font-size: 2em;
-    color: rgb(229 221 221);
+    font-size: 1.6em;
+    color: rgb(255, 255, 255);
     background-color: #040404;
     top: -21px;
     left: 99px;
+    filter: invert(1);
+    transition: transform 0.25s ease-in-out;
+}
+
+.section-2 .github a{
+    color: #000000;
+    text-decoration: none;
+    filter: invert(1);
 }
 
 .section-2 .github:hover{
-    transform: scale(1.08);
+    transform: scale(1.2);
     /* border-radius: 5px;  */
     box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.792);
     /* border: 2.5px solid rgb(23, 23, 23);  */
@@ -302,20 +310,48 @@ body{
 }
 
 .section-3 .button {
-    padding: 4px 6px;
+    padding: 0px;
+    width: 82px;
+    height: 22px;
     background-color: white;
     color: #000000;
     position: relative;
-    top: -15px;
-    left: 60px;
+    top: -47px;
+    left: 40px;
     border: 1px solid;
     border-radius: 4px;
-    text-decoration: none;
+    /* text-decoration: none; */
     font-size: 12px;
 }
 
-.section-3 .button:hover{
+.section-3 .button a {
+    position: relative;
+    top: 3px;
+    left: 9px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #040404;
+}
+
+.section-3 .share {
+    position: relative;
+    top: -16px;
+    left: 0px;
+}
+
+.section-3 .share:hover{
     transform: scale(1.02);
+}
+
+.section-3 .share a {
+    font-size: 23px;    
+    font-weight: bolder;
+    text-decoration: none;
+    color: #000000;
+}
+
+.section-3 .button:hover{
+    transform: scale(1.08);
     border-radius: 3px; 
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.792);
     border: 2px solid rgb(23, 23, 23); 
@@ -323,7 +359,6 @@ body{
 
 .zoom {
     color: #f5f7fa;
-    /* background-color: #000000; */
     position: relative;
     top: -190px;
     left: 0px;
@@ -334,6 +369,11 @@ body{
     border-radius: 3px;
     transition: transform 0.3s ease-in-out;
 }
+.zoom a{
+    color: rgb(0, 0, 0);
+
+}
+
 .zoom:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
