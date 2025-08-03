@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    margin-bottom: 0px;
+    padding: 0;
+    position: relative;
+    top: 100px;
+    bottom: 0px;
+}
+
+body{
+    background: #45deef;
+    text-align: center;
+}
+
+.container{
+    height: 70vh;
+    align-items: center;
+    justify-content: center; 
+    display: flex;
+}
+
+.game{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 60vmin;
+    width: 60vmin;
+}
+
+.box{
+    /* border: 2px solid black; */
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 2vh;
+    font-size: 9vmin;
+    color: red;
+    background-color: burlywood;
+}
+
+#rest {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    color: #000000;
+    /* border: none; */
+    border-radius: 5px;
+}
+
+.new_btn {
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    color: #000000;
+    /* border: none; */
+    border-radius: 5px;
+}
+
+.msg_w{
+    color: burlywood;
+    font-size: 8vmin;
+}
+
+.msg{
+    height: 100vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.hide{
+    display: none;
+}
+
+.drawContainer{
+    height: 90vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.drawMsg{
+    color: burlywood;
+    font-size: 8vmin; 
+}
+.drawBtn{
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    color: #000000;
+    /* border: none; */
+    border-radius: 5px;
+}
+
+.hidedraw{
+    display: none;
+}

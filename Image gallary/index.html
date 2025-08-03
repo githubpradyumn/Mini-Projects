@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive Image Gallery</title>
+</head>
+
+<body>
+    <!-- Light/Dark Mode Toggle -->
+    <div class="toggle-container">
+        <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
+        </label>
+        <span class="toggle-text">Light/Dark Mode</span>
+    </div>
+
+    <!-- Heading -->
+    <div class="heading">
+        <h1>Image Gallery</h1>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="img/1.jpg" alt="Image 1">
+            <div class="caption">Image 1</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/2.jpg" alt="Image 2">
+            <div class="caption">Image 2</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/3.jpg" alt="Image 3">
+            <div class="caption">Image 3</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/4.jpg" alt="Image 4">
+            <div class="caption">Image 4</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/5.jpg" alt="Image 5">
+            <div class="caption">Image 5</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/6.jpg" alt="Image 6">
+            <div class="caption">Image 6</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/7.jpg" alt="Image 7">
+            <div class="caption">Image 7</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/8.jpg" alt="Image 8">
+            <div class="caption">Image 8</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/9.jpg" alt="Image 9">
+            <div class="caption">Image 9</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/10.jpg" alt="Image 10">
+            <div class="caption">Image 10</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/11.jpg" alt="Image 11">
+            <div class="caption">Image 11</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/12.jpeg" alt="Image 12">
+            <div class="caption">Image 12</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/13.jpeg" alt="Image 13">
+            <div class="caption">Image 13</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/14.png" alt="Image 14">
+            <div class="caption">Image 14</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/15.jpeg" alt="Image 15">
+            <div class="caption">Image 15</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/16.jpeg" alt="Image 16">
+            <div class="caption">Image 16</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/17.png" alt="Image 17">
+            <div class="caption">Image 17</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/18.jpg" alt="Image 18">
+            <div class="caption">Image 18</div>
+        </div>
+    </div>
+
+    <!-- Modal for Image Display -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="image-counter" id="imageCounter"></div>
+    </div>
+
+    <!-- JavaScript for Modal and Interactions -->
+    <script>
+        // Open Modal
+        const images = document.querySelectorAll('.gallery-item img');
+        const modal = document.getElementById("myModal");
+        const modalImg = document.getElementById("modalImage");
+        const imageCounter = document.getElementById("imageCounter");
+        let currentIndex = 0;
+
+        images.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                currentIndex = index;
+                modal.style.display = "block";
+                modalImg.src = img.src;
+                imageCounter.textContent = `Image ${currentIndex + 1} of ${images.length}`;
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Close Modal
+        function closeModal() {
+            modal.style.display = "none";
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close on Click Outside
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        // Keyboard Navigation
+        document.addEventListener('keydown', (event) => {
+            if (modal.style.display === "block") {
+                if (event.key === 'ArrowRight') {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    modalImg.src = images[currentIndex].src;
+                    imageCounter.textContent = `Image ${currentIndex + 1} of ${images.length}`;
+                }
+                if (event.key === 'ArrowLeft') {
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                    modalImg.src = images[currentIndex].src;
+                    imageCounter.textContent = `Image ${currentIndex + 1} of ${images.length}`;
+                }
+                if (event.key === 'Escape') {
+                    closeModal();
+                }
+            }
+        });
+
+        // Light/Dark Mode Toggle
+        const toggleSwitch = document.getElementById('themeToggle');
+        toggleSwitch.addEventListener('change', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        // Full-Screen Mode on Double Click
+        modalImg.addEventListener('dblclick', () => {
+            if (!document.fullscreenElement) {
+                modalImg.requestFullscreen();
+            } else {
+                document.exitFullscreen();
+            }
+        });
+    </script>
+</body>
+</html>
