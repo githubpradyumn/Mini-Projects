@@ -1,6 +1,6 @@
 let boxes = document.querySelectorAll(".box");
 let rest_button = document.querySelector("#rest");
-let newgamebuttton = document.querySelector("new_btn");
+let newgamebuttton = document.querySelector(".new_btn");
 let msgcontainer = document.querySelector(".msg");
 let msg = document.querySelector(".msg_w");
 let drawbutton = document.querySelector(".drawBtn");
@@ -24,7 +24,7 @@ const winPatterns = [
 
 boxes.forEach((box) => {
     box.addEventListener("click",() => {
-        console.log("box was clicked");
+        // console.log("box was clicked");
         if(turnO){
             box.innerText = "O";
             turnO = false;
